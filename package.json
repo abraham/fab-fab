@@ -1,0 +1,32 @@
+{
+  "name": "fab-fab",
+  "version": "0.1.0",
+  "description": "A fabulous FAB",
+  "main": "dist/fab-fab.js",
+  "module": "dist/fab-fab.js",
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run build -- --watch\" \"npm run serve\"",
+    "build": "tsc",
+    "serve": "polymer serve",
+    "lint": "eslint src --ext .js,.ts",
+    "test": "npm run lint && npm run build",
+    "postinstall": "npm run build"
+  },
+  "author": "Abraham Williams <abraham@abrah.am>",
+  "license": "MIT",
+  "dependencies": {
+    "@material/mwc-base": "^0.11.0",
+    "@material/mwc-fab": "^0.11.0",
+    "@material/mwc-ripple": "^0.11.0",
+    "lit-element": "^2.2.1",
+    "lit-html": "^1.1.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.9.0",
+    "@typescript-eslint/parser": "^2.9.0",
+    "concurrently": "^5.0.0",
+    "eslint": "^6.7.1",
+    "polymer-cli": "^1.9.11",
+    "typescript": "^3.7.2"
+  }
+}
