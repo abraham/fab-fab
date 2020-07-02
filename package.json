@@ -16,7 +16,7 @@
   "author": "Abraham Williams <abraham@abrah.am>",
   "license": "MIT",
   "dependencies": {
-    "@material/mwc-base": "^0.15.0",
+    "@material/mwc-base": "^0.17.2",
     "@material/mwc-fab": "^0.15.0",
     "@material/mwc-ripple": "^0.15.0",
     "lit-element": "^2.3.1",
